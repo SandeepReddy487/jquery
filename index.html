@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <link rel="stylesheet" href="progress/progresscircle.css">
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+ /* testimonial */
+ #testimonial .container-fluid{
+  padding: 100px;
+  background-image: url(image/image1.jpg);
+  position: relative;
+  background-attachment: fixed;
+}
+/* carousel */
+.carousel-inner .carousel-item .img-box{
+  width: 135px;
+  height: 135px;
+}
+.carousel-control-prev{
+  left: -100px;
+}
+  .carousel-control-Next{
+    right: -100px;
+  }
+  .carousel-indicateros{
+    top: 300px;
+  }
+  .section-2{
+     background-image: url(image/image8.jpg);
+  }
+  .c_image{
+    box-shadow: 0 0 10px #0c3a3a;
+    border-radius: 10px; 
+} 
+
+    /* body{
+        background-image: url(images/image1.jpg);
+    } */
+.stat{
+    background: #121212;
+    /* padding-top: 80px; */
+    padding: 80px;
+    color: white;
+    background-attachment: fixed;
+    /* margin-top: 209px; */
+}
+
+.stat i{
+    font-size: 50px;
+}
+
+.stat-item h2{
+    font-weight: bold;
+    font-size: 42px;
+    color: darkorange;
+}
+h2{
+    color: darkorange;
+
+}
+.stat p{
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+ .section-5{
+    /* background-color: #1f1f1f; */
+    overflow: hidden;
+    background-color: #1f1f1f;
+
+}  
+.our-team
+{
+    padding: 20px 15px 30px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+.our-team .pic
+{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 10px;
+    margin-bottom: 25px;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .pic{
+    background-color: #17bebb;
+    border-radius: 50%;
+
+}
+.pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.our-team .title
+{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2e282a;
+    text-transform: uppercase;
+    margin: 0 0 7px 0;
+}
+.our-team .post{
+    display: block;
+    font-size: 15px;
+    color: #17bebb;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.our-team .social{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/* .our-team .social li a{
+background: #17bebb; 
+ color: white;
+} */
+.our-team .social li{
+    display: inline-block;
+    margin-right: 5px;
+
+}
+.our-team .social li a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 15px;
+    color: white;
+    color: #17bebb;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .social li a{
+    background: #17bebb;
+    color: white;
+}
+footer{
+  background-color:rgb(19, 10, 10) ;
+    color: white;
+  }
+
+</style>
+</head>
+<body>
+
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-success">
+              <a class="navbar-brand" href="#">
+                <img src="image/logo4.png" alt="" width="170px" height="50px">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sidebar.html">ABOUT</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="profile.html">USER CONTACT</a>
+                  </li>
+
+                </ul>
+              </div>
+            </nav>
+              <!-- carousel -->
+                <section id="testimonial">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <!-- Title Text -->
+                          <h2 class="text-center title text-dark"> <strong> Testimonials</strong></h2>
+                                       <!-------- carousel ------------>
+              <div class="carousel slide" id="my-carousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#my-carousel" data-slide-to="0"></li>
+                  <li data-target="#my-carousel" data-slide-to="1" class="active"></li>
+                  <li data-target="#my-carousel" data-slide-to="2"></li>
+                  <li data-target="#my-carousel" data-slide-to="3"></li>
+                  <li data-target="#my-carousel" data-slide-to="4"></li>
+              
+                </ol>
+                <div class="carousel-inner">
+                  <!-- slider1 -->
+                <div class="carousel-item text-center">
+                  <div class="img-box border rounded-circle m-auto">
+                    <img src="image/testimonials-1.jpg" alt="" class="d-block w-100 rounded-circle" >
+                  </div>
+                  <h5 class="py-1 my-1"><strong class="text-warning text-uppercase"> Saul Goodman</strong></h5>
+                               <h3 class="text-dark m-1">Ceo &amp; Founder</h3>
+                             <p class="pt-3 text-white">Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                                  Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                                  </p>
+              
+                </div>
+                  <!-- slider2 -->
+                  <div class="carousel-item text-center active">
+                    <div class="img-box border rounded-circle m-auto">
+                      <img src="image/testimonials-2.jpg" alt="" class="d-block w-100 rounded-circle" >
+                    </div>
+                    <h5 class="py-1 my-1"><strong class="text-warning text-uppercase">Sara Wilsson</strong></h5>
+                                 <h3 class="text-dark m-1">Designer</h3>
+                                 <p class="pt-3 text-white">Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum.
+                                    eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                                  .</p>
+                  </div>
+                  <!-- slider3 -->
+                  <div class="carousel-item text-center">
+                    <div class="img-box border rounded-circle m-auto">
+                      <img src="image/testimonials-3.jpg" alt="" class="d-block w-100 rounded-circle" >
+                    </div>
+                    <h5 class="py-1 my-1"><strong class="text-warning text-uppercase">Jena Karlis</strong></h5>
+                                 <h3 class="text-dark m-1">Store Owner</h3>
+                                 <p class="pt-3 text-white">Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem.
+                                    veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                                </p>
+                  </div>
+                  <div class="carousel-item text-center">
+                    <div class="img-box border rounded-circle m-auto">
+                      <img src="image/testimonials-4.jpg" alt="" class="d-block w-100 rounded-circle" >
+                    </div>
+                    <h5 class="py-1 my-1"><strong class="text-warning text-uppercase">Jena Karlis</strong></h5>
+                                 <h3 class="text-dark m-1">Store Owner</h3>
+                                 <p class="pt-3 text-white">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat.
+                                    minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                                </p>
+                  </div>
+                  <div class="carousel-item text-center">
+                    <div class="img-box border rounded-circle m-auto">
+                      <img src="image/testimonials-5.jpg" alt="" class="d-block w-100 rounded-circle" >
+                    </div>
+                    <h5 class="py-1 my-1"><strong class="text-warning text-uppercase">John Larson</strong></h5>
+                                 <h3 class="text-dark m-1">Entrepreneur</h3>
+                                 <p class="pt-3 text-white">Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor
+                                    noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                                </p>
+                  </div>
+                </div>
+                <!-- <a href="#my-carousel" class="carousel-control-prev" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a href="#my-carousel" class="carousel-control-next" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+               -->
+              </div>
+              </div>
+              </div>
+              </div>
+              </section>
+            
+    <!-- -------------------------------------------- -->
+     <section class="section-2">
+    <div class="container fluid mt-2 p-2">
+        <div class="row">
+        <div class="col-lg-3">
+            <div class="circlechart" 
+             data-percentage="99">
+             HTML
+             </div>
+            </div>
+        <div class="col-lg-3">
+            <div class="circlechart" 
+            data-percentage="30">
+                CSS
+        </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="circlechart" 
+            data-percentage="-50">
+            BOOTSTRAP
+        </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="circlechart" 
+            data-percentage="80">
+            ANGULAR
+        </div>
+        </div>
+        
+        </div>
+            </div>
+        
+</section>
+    <!-- ----------------------------------------------------- -->
+
+    <section class="section-3">
+        <div class="container p-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                        <img src="image/testimonials-5.jpg" class="img-fluid img-thumbnail c_image">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-teal font-weight-bold white-shadow">ABOUT ME</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus optio minima id, vero sit eligendi et enim ratione est nesciunt tempora facere dolorem aperiam nam quaerat magni. Iusto corporis ut accusamus, dignissimos earum tempora quis quam, enim facere cupiditate rem quo inventore cumque repellat. Quo aliquid doloremque amet nihil officiis similique dignissimos placeat cupiditate voluptatibus sequi facere aut saepe quaerat, ducimus esse ea quia optio voluptates perferendis consectetur praesentium voluptas?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <!-- ------------------------------------------------------------------- -->
+   <section  class="stat" id="stats">
+    <div class="container-box">
+      <br> <br>
+      <div class="container">
+<div class="row text-center">
+<div class="col-md-3">
+<div class="stat-items">
+    <i class="fa fa-camera" aria-hidden="true"></i>
+    <h2><span class="counter text-center">3390</span> <span>+</span></h2>
+    <p>VIEWS</p>
+</div>
+</div>
+<div class="col-md-3">
+    <div class="stat-items">
+        <i class="fa fa-android" aria-hidden="true"></i>
+        <h2><span class="counter text-center">3245</span> <span>+</span></h2>
+        <p>ANDROID USER</p>
+    </div>
+    </div>
+    <div class="col-md-3">
+        <div class="stat-items">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <h2><span class="counter text-center">7236</span> <span>+</span></h2>
+            <p>INTERNATIONALLY</p>
+        </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="stat-items">
+                <i class="fa fa-windows" aria-hidden="true"></i>
+                <h2><span class="counter text-center">9823</span> <span>+</span></h2>
+                <p>WINDOW SUPPORT</p>
+            </div>
+            </div>
+                        
+</div>
+      </div>
+    </div>
+   </section>
+<!-- ---------------------------- -->
+<div class="container mt-4">
+  <div class="row">
+ <div class="col">
+     <form>
+         <div class="form-row">
+           <div class="col">
+             <input type="text" class="form-control" placeholder="First name">
+           </div>
+           <div class="col">
+             <input type="text" class="form-control" placeholder="Last name">
+           </div>
+         </div>
+       </form>
+ </div>
+  </div>
+     </div>  
+     <div class="container mt-4">
+         <div class="row">
+        <div class="col">
+            <form>
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Password">
+                  </div>
+                </div>
+              </form>
+        </div>
+         </div>
+            </div>  
+ 
+    <!-- ------------------------ -->
+    <section class="section-5 mt-4">
+    <div class="conatiner mt-5">
+      <div class="row">
+      <div class="col-md-3">
+      <div class="our-team">
+      <div class="pic">
+      <img src="image/person1.jpg" alt="">
+      </div>
+      <h3 class="title">SONY</h3>
+      <span class="post">Web Developer</span>
+      <ul class="social"> 
+          <li><a href="" class="fa fa-facebook-square" aria-hidden="true"></a></li>
+          <li><a href="" class="fa fa-whatsapp" aria-hidden="true"></a></li>
+          <li><a href="" class="fa fa-instagram" aria-hidden="true"></a></li>
+          <li><a href="" class="fa fa-comments" aria-hidden="true"></a></li>
+      </ul>
+      </div>
+      </div>
+      <div class="col-md-3">
+          <div class="our-team">
+          <div class="pic">
+          <img src="image/person2.jpg" alt="">
+          </div>
+          <h3 class="title">Renula Deo</h3>
+          <span class="post">Google Fault</span>
+          <ul class="social"> 
+              <li><a href="" class="fa fa-google-plus-official"></a></li>
+              <li><a href="" class="fa fa-google-wallet" aria-hidden="true"></a></li>
+              <li><a href="" class="fa fa-google" aria-hidden="true"></a></li>
+              <li><a href="" class="fa fa-google-plus" aria-hidden="true"></a></li>
+          </ul>
+          </div>
+          </div>
+          <div class="col-md-3">
+              <div class="our-team">
+              <div class="pic">
+              <img src="image/person3.jpg" alt="">
+              </div>
+              <h3 class="title">Kethraine</h3>
+              <span class="post">Engineer</span>
+              <ul class="social"> 
+                  <li><a href="" class="fa fa-facebook-square" aria-hidden="true"></a></li>
+                  <li><a href="" class="fa fa-whatsapp" aria-hidden="true"></a></li>
+                  <li><a href="" class="fa fa-instagram" aria-hidden="true"></a></li>
+                  <li><a href="" class="fa fa-comments" aria-hidden="true"></a></li>
+                      </ul>
+              </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="our-team">
+                  <div class="pic">
+                  <img src="image/person4.jpg" alt="">
+                  </div>
+                  <h3 class="title">Willainson</h3>
+                  <span class="post">Testing</span>
+                  <ul class="social"> 
+                      <li><a href="" class="fa fa-google-plus-official"></a></li>
+                      <li><a href="" class="fa fa-google-wallet" aria-hidden="true"></a></li>
+                      <li><a href="" class="fa fa-google" aria-hidden="true"></a></li>
+                      <li><a href="" class="fa fa-google-plus" aria-hidden="true"></a></li>
+                  </ul>
+                  </div>
+                  </div>               
+                  </div> 
+                 </div> 
+      
+</section>
+
+<!-- ----------------------------- -->
+
+
+<footer>
+  <div class="container mt-4">
+  <div class="row">
+      <div class="col">
+          <h5>WEBAPP </h5>
+          <p>Features</p>
+          <p>Security</p>
+          <p>Download</p>
+          <p>WhatsApp Web</p>
+          <p>Business</p>
+          <p>Privacy</p>
+       </div>
+       <div class="col">
+          <h5>COMPANY</h5>
+       <p>About</p>
+       <p>Careers</p>
+       <p>Brand Center</p>
+       <p>Get in touch</p>
+       <p>Blog</p>
+       <p>WhatsApp Stories </p>
+      </div>
+          <div class="col">
+        <h5>DOWNLOAD </h5>
+        <p>Mac/PC </p>
+        <p>Android </p>
+        <p>iPhone  </p>
+          </div>
+              <div class="col">
+              <h5>HELP </h5>
+              <p>FAQ </p>
+              <p>Twitter </p>
+              <p>Facebook</p>
+              <p>Coronavirus </p>
+              </div>
+          </div>
+
+  </div>
+  </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="progress/progresscircle.js"></script>
+<script src="progress/progres.js"></script>
+
+<script src="count/jquery.waypoints.min.js"></script>
+<script src="count/jquery.counterup.min.js"></script>
+<script src="count/count.js"></script>
+</body>
+</html>
